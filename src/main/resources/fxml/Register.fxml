@@ -41,7 +41,7 @@
                 <Insets bottom="28.0" />
             </FlowPane.margin>
         </PasswordField>
-        <Button fx:id="registerBtn" mnemonicParsing="false" onMouseClicked="#registerBtnClicked" prefHeight="34.0" prefWidth="122.0" text="Register">
+        <Button mnemonicParsing="false" onMouseClicked="#registerBtnClicked" prefHeight="34.0" prefWidth="122.0" text="Register">
             <cursor>
                 <Cursor fx:constant="HAND" />
             </cursor>
