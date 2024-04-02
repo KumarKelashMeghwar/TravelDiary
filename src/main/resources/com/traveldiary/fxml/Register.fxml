@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="484.0" prefWidth="665.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.traveldiary.controllers.RegisterController">
+    <HBox alignment="CENTER" prefHeight="69.0" prefWidth="665.0">
+        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="272.0" text="Travel Diary" textAlignment="CENTER">
+            <font>
+                <Font name="Open Sans Bold" size="18.0" />
+            </font>
+        </Label>
+    </HBox>
+    <FlowPane layoutX="187.0" layoutY="69.0" prefHeight="289.0" prefWidth="349.0">
+        <Label prefHeight="34.0" prefWidth="171.0" text="Register">
+            <font>
+                <Font name="Poppins SemiBold" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="usernameField" prefHeight="34.0" prefWidth="285.0" promptText="Username">
+            <FlowPane.margin>
+                <Insets bottom="28.0" top="20.0" />
+            </FlowPane.margin>
+        </TextField>
+        <PasswordField fx:id="passwordField" prefHeight="34.0" prefWidth="285.0" promptText="Password">
+            <FlowPane.margin>
+                <Insets bottom="28.0" />
+            </FlowPane.margin>
+        </PasswordField>
+        <PasswordField fx:id="confirmPasswordField" prefHeight="34.0" prefWidth="285.0" promptText="Confirm Password">
+            <FlowPane.margin>
+                <Insets bottom="28.0" />
+            </FlowPane.margin>
+        </PasswordField>
+        <Button fx:id="registerBtn" mnemonicParsing="false" onMouseClicked="#registerBtnClicked" prefHeight="34.0" prefWidth="122.0" text="Register">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <FlowPane.margin>
+                <Insets top="15.0" />
+            </FlowPane.margin>
+        </Button>
+    </FlowPane>
+    <Label layoutX="187.0" layoutY="378.0" prefHeight="34.0" prefWidth="171.0" text="Already have an account?">
+        <font>
+          <Font name="Poppins Regular" size="12.0" />
+        </font>
+    </Label>
+    <Hyperlink layoutX="351.0" layoutY="383.0" onMouseClicked="#loginClicked" text="Login now!">
+        <font>
+          <Font name="Poppins Regular" size="12.0" />
+        </font>
+    </Hyperlink>
+</AnchorPane>
