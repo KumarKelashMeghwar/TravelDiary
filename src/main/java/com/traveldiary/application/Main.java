@@ -17,6 +17,7 @@ public class Main extends Application {
         stage.setScene(loginScene);
         stage.setTitle("Travel Diary");
 
+        stage.setResizable(false);
         stage.show();
     }
 

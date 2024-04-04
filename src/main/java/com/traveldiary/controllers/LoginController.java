@@ -32,7 +32,18 @@ public class LoginController {
             User user = getUserFromCredentials(username, password);
 
             if (user != null) {
-                showAlert(Alert.AlertType.INFORMATION, "Login Success", "Welcome, " + username + "!");
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Dashboard.fxml"));
+                try {
+                    Parent root = loader.load();
+                    Stage stage = (Stage) passwordField.getScene().getWindow();
+                    stage.setScene(new Scene(root));
+                    stage.setTitle("Travel Diary");
+                    stage.setResizable(false);
+                    stage.setResizable(false);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+//                showAlert(Alert.AlertType.INFORMATION, "Login Success", "Welcome, " + username + "!");
             } else {
                 showAlert(Alert.AlertType.ERROR, "Login Error", "Invalid username or password!");
             }
@@ -73,6 +84,8 @@ public class LoginController {
             Stage stage = (Stage) passwordField.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.setTitle("Travel Diary");
+            stage.setResizable(false);
+            stage.setResizable(false);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
