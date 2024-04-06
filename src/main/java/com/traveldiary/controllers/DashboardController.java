@@ -13,7 +13,6 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 import java.io.BufferedReader;
@@ -29,6 +28,10 @@ import java.util.ResourceBundle;
 public class DashboardController implements Initializable {
 
     public Button addJournalButton;
+
+    @FXML
+    private TableColumn<JournalEntry, Void> editColumn;
+
     @FXML
     private TableColumn<JournalEntry, LocalDate> date;
 
@@ -63,11 +66,33 @@ public class DashboardController implements Initializable {
         expenses.setCellValueFactory(new PropertyValueFactory<>("expenses"));
         photos.setCellValueFactory(new PropertyValueFactory<>("photos"));
 
+
         photos.setCellFactory(param -> new TableCellWithImage());
 
         description.setCellFactory(param -> new TableCellWithWrap());
 
         loadEntriesForUser(Session.getUsername());
+
+        editColumn.setCellFactory(param -> new TableCell<>() {
+            private final Button editButton = new Button("Edit Entry");
+
+            {
+                editButton.setOnAction(event -> {
+                    JournalEntry entry = getTableView().getItems().get(getIndex());
+                    editEntry(entry);
+                });
+            }
+
+            @Override
+            protected void updateItem(Void item, boolean empty) {
+                super.updateItem(item, empty);
+                if (empty) {
+                    setGraphic(null);
+                } else {
+                    setGraphic(editButton);
+                }
+            }
+        });
     }
 
     ObservableList<JournalEntry> list = FXCollections.observableArrayList();
@@ -143,6 +168,21 @@ public class DashboardController implements Initializable {
         }
     }
 
+    private void editEntry(JournalEntry entry) {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/EditJournalEntry.fxml"));
+        try {
+            Parent root = loader.load();
+            EditJournalEntryController controller = loader.getController();
+            controller.populateFields(entry); // Pass the selected entry to the controller
+            Stage stage = (Stage) journalEntriesTable.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Edit Entry");
+            stage.setResizable(false);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     @FXML
     void removeBtnClicked() {
         JournalEntry selectedItem = journalEntriesTable.getSelectionModel().getSelectedItem();
@@ -204,8 +244,8 @@ public class DashboardController implements Initializable {
 
         public TableCellWithImage() {
             imageView = new ImageView();
-            imageView.setFitWidth(155);
-            imageView.setFitHeight(100);
+            imageView.setFitWidth(200);
+            imageView.setFitHeight(120);
             setGraphic(imageView);
         }
 

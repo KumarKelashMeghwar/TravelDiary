@@ -25,7 +25,7 @@
      </Label>
      <TextField fx:id="usernameField" focusTraversable="false" layoutX="177.3333282470703" layoutY="145.3333282470703" prefHeight="35.0" prefWidth="290.0" promptText="Username" />
      <PasswordField fx:id="passwordField" focusTraversable="false" layoutX="177.3333282470703" layoutY="210.66665649414062" prefHeight="35.0" prefWidth="290.0" promptText="Password" />
-   <Label layoutX="177.0" layoutY="341.0" text="Don't have an account?">
+   <Label focusTraversable="false" layoutX="177.0" layoutY="341.0" text="Don't have an account?">
       <font>
          <Font name="Poppins Regular" size="12.0" />
       </font>
@@ -35,12 +35,12 @@
              <Cursor fx:constant="HAND" />
          </cursor>
      </Button>
-   <Hyperlink layoutX="322.0" layoutY="338.0" onMouseClicked="#createBtnClicked" text="Create now!">
+   <Hyperlink focusTraversable="false" layoutX="322.0" layoutY="338.0" onMouseClicked="#createBtnClicked" text="Create now!">
       <font>
          <Font name="Poppins Regular" size="12.0" />
       </font>
    </Hyperlink>
-   <Label layoutX="177.0" layoutY="378.0" onMouseClicked="#forgotClicked" prefHeight="17.0" prefWidth="201.0" text="Forgot your password?" underline="true">
+   <Label focusTraversable="false" layoutX="177.0" layoutY="378.0" onMouseClicked="#forgotClicked" prefHeight="17.0" prefWidth="201.0" text="Forgot your password?" underline="true">
       <font>
          <Font size="11.0" />
       </font>

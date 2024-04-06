@@ -1,9 +1,0 @@
-ID: b6164ac3-1cca-4f2d-8f7d-f001f71dce67
-Username: Kelash
-Title: Germany
-Date: 2022-06-22
-Image: C:/Users/Kelash/IdeaProjects/TravelDiary/Images/b6164ac3-1cca-4f2d-8f7d-f001f71dce67.jpg
-Location: USA
-Description: Vulputate ut pharetra sit amet. Tortor at risus viverra adipiscing at in.
-Expenses: 7000 USD
-Ratings: 5.0 stars

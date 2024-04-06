@@ -5,39 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c5499be-4693-47af-879b-f5cf5bab71e7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entries/Entries2550cfdb-a25f-442e-9301-e4474605a781.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entries/Entries30b5c073-c5a7-4308-b7c9-c96367dac72b.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entries/Entries5eca2af4-6aad-46dd-a1c1-6622e4731d4d.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entries/Entries74f590c2-c7c7-45fe-8e53-baea2c6022d1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entries/Entriesb6164ac3-1cca-4f2d-8f7d-f001f71dce67.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entries/Entriese0a3f7f9-e73e-41cf-bc63-e5d75f5f377b.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entries/Entriesf364ddca-fc21-4c47-9049-eb457e8418c1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/2550cfdb-a25f-442e-9301-e4474605a781.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/30b5c073-c5a7-4308-b7c9-c96367dac72b.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/5eca2af4-6aad-46dd-a1c1-6622e4731d4d.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/74f590c2-c7c7-45fe-8e53-baea2c6022d1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/b6164ac3-1cca-4f2d-8f7d-f001f71dce67.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/e0a3f7f9-e73e-41cf-bc63-e5d75f5f377b.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/f364ddca-fc21-4c47-9049-eb457e8418c1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/traveldiary/controllers/AddJournalEntryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/traveldiary/controllers/ForgotController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/traveldiary/datamanagement/Session.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/AddJournalEntry.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/Forgot.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/traveldiary/controllers/EditJournalEntryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/EditJournalEntry.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/traveldiary/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/traveldiary/application/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entries/Entries2550cfdb-a25f-442e-9301-e4474605a781.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entries/Entries30b5c073-c5a7-4308-b7c9-c96367dac72b.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entries/Entries5eca2af4-6aad-46dd-a1c1-6622e4731d4d.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entries/Entries74f590c2-c7c7-45fe-8e53-baea2c6022d1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entries/Entriesb6164ac3-1cca-4f2d-8f7d-f001f71dce67.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entries/Entriese0a3f7f9-e73e-41cf-bc63-e5d75f5f377b.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entries/Entriesf364ddca-fc21-4c47-9049-eb457e8418c1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/2550cfdb-a25f-442e-9301-e4474605a781.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/30b5c073-c5a7-4308-b7c9-c96367dac72b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/5eca2af4-6aad-46dd-a1c1-6622e4731d4d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/74f590c2-c7c7-45fe-8e53-baea2c6022d1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/b6164ac3-1cca-4f2d-8f7d-f001f71dce67.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/e0a3f7f9-e73e-41cf-bc63-e5d75f5f377b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/f364ddca-fc21-4c47-9049-eb457e8418c1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/traveldiary/controllers/AddJournalEntryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/traveldiary/controllers/AddJournalEntryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/traveldiary/controllers/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/traveldiary/controllers/DashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/traveldiary/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/traveldiary/controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/traveldiary/models/CustomImage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/traveldiary/models/Dashboard.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/traveldiary/models/JournalEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/traveldiary/models/JournalEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Dashboard.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Register.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users.txt" beforeDir="false" afterPath="$PROJECT_DIR$/users.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,29 +71,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Kelash/IdeaProjects/RiskGame&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Kelash/IdeaProjects/TravelDiary/src/main/resources/fxml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Kelash\IdeaProjects\TravelDiary\src\main\resources\fxml" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Kelash\IdeaProjects\TravelDiary\src\main\resources\images" />
       <recent name="C:\Users\Kelash\IdeaProjects\TravelDiary\src\main\java\com\traveldiary\application" />
@@ -153,7 +145,7 @@
       <workItem from="1712128225476" duration="3891000" />
       <workItem from="1712141150789" duration="5735000" />
       <workItem from="1712210703097" duration="6464000" />
-      <workItem from="1712381193824" duration="15487000" />
+      <workItem from="1712381193824" duration="19604000" />
     </task>
     <servers />
   </component>

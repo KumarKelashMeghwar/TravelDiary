@@ -9,14 +9,14 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="461.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.traveldiary.controllers.DashboardController">
-    <HBox alignment="CENTER" prefHeight="59.0" prefWidth="723.0">
-        <Label alignment="CENTER" prefHeight="58.0" prefWidth="603.0" text="Travel Diary">
+<AnchorPane prefHeight="461.0" prefWidth="898.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.traveldiary.controllers.DashboardController">
+    <HBox alignment="CENTER" prefHeight="59.0" prefWidth="898.0">
+        <Label alignment="CENTER" prefHeight="58.0" prefWidth="769.0" text="Travel Diary">
             <font>
                 <Font name="System Bold" size="18.0" />
             </font>
         </Label>
-      <Button focusTraversable="false" mnemonicParsing="false" onMouseClicked="#signOutClicked" prefHeight="35.0" prefWidth="91.0" text="Sign Out">
+      <Button focusTraversable="false" mnemonicParsing="false" onMouseClicked="#signOutClicked" prefHeight="35.0" prefWidth="103.0" text="Sign Out">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
@@ -30,16 +30,18 @@
             <Font name="System Bold" size="12.0" />
         </font>
     </Label>
-    <Button fx:id="addJournalButton" layoutX="636.0" layoutY="70.0" mnemonicParsing="false" onMouseClicked="#addNowBtnClicked" prefHeight="25.0" prefWidth="75.0" text="Add Now" />
-    <TableView fx:id="journalEntriesTable" layoutX="19.0" layoutY="110.0" prefHeight="299.0" prefWidth="693.0">
+    <Button fx:id="addJournalButton" layoutX="810.0" layoutY="70.0" mnemonicParsing="false" onMouseClicked="#addNowBtnClicked" prefHeight="25.0" prefWidth="75.0" text="Add Now" />
+    <TableView fx:id="journalEntriesTable" layoutX="19.0" layoutY="110.0" prefHeight="299.0" prefWidth="867.0">
         <columns>
-            <TableColumn fx:id="title" prefWidth="81.99999618530273" text="Title" />
-            <TableColumn fx:id="locations" prefWidth="81.33331298828125" text="Location" />
-            <TableColumn fx:id="date" prefWidth="80.00001525878906" text="Date" />
-            <TableColumn fx:id="description" prefWidth="114.0" text="Description" />
-            <TableColumn fx:id="ratings" prefWidth="70.66668701171875" text="Ratings" />
-            <TableColumn fx:id="expenses" prefWidth="99.99993896484375" text="Expenses" />
-            <TableColumn fx:id="photos" maxWidth="202.66668701171875" prefWidth="164.00006103515625" text="Photo" />
+            <TableColumn fx:id="title" prefWidth="90.00000190734863" text="Title" />
+            <TableColumn fx:id="locations" prefWidth="83.99999237060547" text="Location" />
+            <TableColumn fx:id="date" prefWidth="76.66667175292969" text="Date" />
+            <TableColumn fx:id="description" prefWidth="118.666748046875" text="Description" />
+            <TableColumn fx:id="ratings" prefWidth="85.99993896484375" text="Ratings" />
+            <TableColumn fx:id="expenses" prefWidth="87.33328247070312" text="Expenses" />
+            <TableColumn fx:id="photos" maxWidth="242.6666259765625" prefWidth="207.99993896484375" text="Photo" />
+         <TableColumn fx:id="editColumn" prefWidth="120.00006103515625" text="Actions" />
+            
         </columns>
     </TableView>
     <Button layoutX="19.0" layoutY="421.0" mnemonicParsing="false" onMouseClicked="#removeBtnClicked" prefHeight="25.0" prefWidth="129.0" text="Remove Entry">

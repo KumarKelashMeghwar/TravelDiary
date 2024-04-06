@@ -23,6 +23,8 @@ public class JournalEntry {
 
     }
 
+
+
     public JournalEntry(String Id, String username, String title, LocalDate date, String photoPath, String location, String description, String expenses, String ratings) {
         this.title = title;
         this.date = date;
@@ -106,5 +108,20 @@ public class JournalEntry {
 
     public String getRatings() {
         return ratings;
+    }
+
+    @Override
+    public String toString() {
+        return "JournalEntry{" +
+                "username='" + username + '\'' +
+                ", Id='" + Id + '\'' +
+                ", title='" + title + '\'' +
+                ", date=" + date +
+                ", location='" + location + '\'' +
+                ", description='" + description + '\'' +
+                ", photos=" + photos +
+                ", expenses='" + expenses + '\'' +
+                ", ratings='" + ratings + '\'' +
+                '}';
     }
 }
