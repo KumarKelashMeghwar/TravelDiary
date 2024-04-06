@@ -14,7 +14,7 @@
     <HBox alignment="CENTER" prefHeight="57.0" prefWidth="665.0">
         <Label alignment="CENTER" prefHeight="58.0" prefWidth="327.0" text="Travel Diary" textAlignment="CENTER">
             <font>
-                <Font name="Open Sans Bold" size="19.0" />
+                <Font name="System Bold" size="19.0" />
             </font>
         </Label>
     </HBox>
@@ -23,14 +23,14 @@
              <Font name="Poppins SemiBold" size="15.0" />
          </font>
      </Label>
-     <TextField fx:id="usernameField" layoutX="177.3333282470703" layoutY="145.3333282470703" prefHeight="35.0" prefWidth="290.0" promptText="Username" />
-     <PasswordField fx:id="passwordField" layoutX="177.3333282470703" layoutY="210.66665649414062" prefHeight="35.0" prefWidth="290.0" promptText="Password" />
+     <TextField fx:id="usernameField" focusTraversable="false" layoutX="177.3333282470703" layoutY="145.3333282470703" prefHeight="35.0" prefWidth="290.0" promptText="Username" />
+     <PasswordField fx:id="passwordField" focusTraversable="false" layoutX="177.3333282470703" layoutY="210.66665649414062" prefHeight="35.0" prefWidth="290.0" promptText="Password" />
    <Label layoutX="177.0" layoutY="341.0" text="Don't have an account?">
       <font>
          <Font name="Poppins Regular" size="12.0" />
       </font>
    </Label>
-     <Button layoutX="177.0" layoutY="269.0" mnemonicParsing="false" onMouseClicked="#loginBtnClicked" prefHeight="33.0" prefWidth="119.0" text="Login">
+     <Button focusTraversable="false" layoutX="177.0" layoutY="269.0" mnemonicParsing="false" onMouseClicked="#loginBtnClicked" prefHeight="33.0" prefWidth="119.0" text="Login">
          <cursor>
              <Cursor fx:constant="HAND" />
          </cursor>
@@ -40,4 +40,12 @@
          <Font name="Poppins Regular" size="12.0" />
       </font>
    </Hyperlink>
+   <Label layoutX="177.0" layoutY="378.0" onMouseClicked="#forgotClicked" prefHeight="17.0" prefWidth="201.0" text="Forgot your password?" underline="true">
+      <font>
+         <Font size="11.0" />
+      </font>
+   </Label>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
 </AnchorPane>

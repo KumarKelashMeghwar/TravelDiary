@@ -1,0 +1,9 @@
+ID: 74f590c2-c7c7-45fe-8e53-baea2c6022d1
+Username: Amrat
+Title: Russia
+Date: 2024-04-18
+Image: C:/Users/Kelash/IdeaProjects/TravelDiary/Images/74f590c2-c7c7-45fe-8e53-baea2c6022d1.jpg
+Location: Moscow
+Description: Est ullamcorper eget nulla facilisi etiam dignissim. Lectus magna fringilla urna porttitor rhoncus dolor purus non enim. In tellus integer feugiat scelerisque. Turpis egestas maecenas pharetra convallis posuere morbi leo urna molestie. Nec feugiat in fermentum posuere.
+Expenses: 45000 Euros
+Ratings: 5

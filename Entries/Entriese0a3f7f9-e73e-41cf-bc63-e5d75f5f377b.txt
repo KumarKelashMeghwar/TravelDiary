@@ -1,0 +1,9 @@
+ID: e0a3f7f9-e73e-41cf-bc63-e5d75f5f377b
+Username: Kelash
+Title: Gemrany
+Date: 2024-04-19
+Image: C:/Users/Kelash/IdeaProjects/TravelDiary/Images/e0a3f7f9-e73e-41cf-bc63-e5d75f5f377b.jpg
+Location: usad
+Description: adadsasd
+Expenses: 343
+Ratings: 343

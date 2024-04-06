@@ -1,0 +1,9 @@
+ID: f364ddca-fc21-4c47-9049-eb457e8418c1
+Username: Mera
+Title: German Tour
+Date: 2024-04-19
+Image: C:/Users/Kelash/IdeaProjects/TravelDiary/Images/f364ddca-fc21-4c47-9049-eb457e8418c1.jpg
+Location: Frankfruit
+Description: Vulputate ut pharetra sit amet. Tortor at risus viverra adipiscing at in.
+Expenses: 7000 Euros
+Ratings: 4

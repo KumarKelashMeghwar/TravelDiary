@@ -1,5 +1,6 @@
 package com.traveldiary.controllers;
 
+import com.traveldiary.datamanagement.Session;
 import com.traveldiary.models.User;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -32,6 +33,7 @@ public class LoginController {
             User user = getUserFromCredentials(username, password);
 
             if (user != null) {
+                Session.setUsername(username);
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Dashboard.fxml"));
                 try {
                     Parent root = loader.load();
@@ -39,13 +41,12 @@ public class LoginController {
                     stage.setScene(new Scene(root));
                     stage.setTitle("Travel Diary");
                     stage.setResizable(false);
-                    stage.setResizable(false);
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
 //                showAlert(Alert.AlertType.INFORMATION, "Login Success", "Welcome, " + username + "!");
             } else {
-                showAlert(Alert.AlertType.ERROR, "Login Error", "Invalid username or password!");
+                showAlert("Login Error", "Invalid username or password!");
             }
 
         } catch (Exception e) {
@@ -65,13 +66,13 @@ public class LoginController {
             }
             reader.close();
         } catch (IOException e) {
-            showAlert(Alert.AlertType.ERROR, "File Error", "Error occurred while reading user details!");
+            showAlert("File Error", "Error occurred while reading user details!");
         }
         return null;
     }
 
-    public void showAlert(Alert.AlertType type, String title, String content) {
-        Alert alert = new Alert(type);
+    private void showAlert(String title, String content) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setTitle(title);
         alert.setContentText(content);
         alert.showAndWait();
@@ -85,10 +86,22 @@ public class LoginController {
             stage.setScene(new Scene(root));
             stage.setTitle("Travel Diary");
             stage.setResizable(false);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @FXML
+    void forgotClicked() {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Forgot.fxml"));
+        try {
+            Parent root = loader.load();
+            Stage stage = (Stage) passwordField.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Travel Diary");
             stage.setResizable(false);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
     }
 }
