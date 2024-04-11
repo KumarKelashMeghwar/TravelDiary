@@ -30,6 +30,9 @@ public class DashboardController implements Initializable {
     public Button addJournalButton;
 
     @FXML
+    private TableView<JournalEntry> journalEntriesTable;
+
+    @FXML
     private TableColumn<JournalEntry, Void> editColumn;
 
     @FXML
@@ -40,9 +43,6 @@ public class DashboardController implements Initializable {
 
     @FXML
     private TableColumn<JournalEntry, String> expenses;
-
-    @FXML
-    private TableView<JournalEntry> journalEntriesTable;
 
     @FXML
     private TableColumn<JournalEntry, String> locations;
@@ -75,9 +75,9 @@ public class DashboardController implements Initializable {
 
         editColumn.setCellFactory(param -> new TableCell<>() {
             private final Button editButton = new Button("Edit Entry");
-
             {
-                editButton.setOnAction(event -> {
+                editButton.setOnAction(event ->
+                {
                     JournalEntry entry = getTableView().getItems().get(getIndex());
                     editEntry(entry);
                 });
@@ -96,8 +96,8 @@ public class DashboardController implements Initializable {
     }
 
     ObservableList<JournalEntry> list = FXCollections.observableArrayList();
-    private void loadEntriesForUser(String username) {
 
+    private void loadEntriesForUser(String username) {
         String entriesDirectory = "Entries";
 
         try {

@@ -6,14 +6,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.File;
 
 public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-
-
 
         FXMLLoader loginLoader = new FXMLLoader(getClass().getResource("/fxml/Login.fxml"));
         Parent loginRoot = loginLoader.load();

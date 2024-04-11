@@ -1,6 +1,5 @@
 package com.traveldiary.controllers;
 
-import com.traveldiary.datamanagement.Session;
 import com.traveldiary.models.JournalEntry;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -19,7 +18,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.time.LocalDate;
-import java.util.UUID;
+
 
 import java.io.File;
 import java.io.IOException;
@@ -98,7 +97,6 @@ public class EditJournalEntryController {
         }
 
         if (entryToUpdate != null) {
-            // Update the entry details
             entryToUpdate.setDate(localDate);
             entryToUpdate.setDescription(descriptionText);
             entryToUpdate.setLocation(locationName);
@@ -106,15 +104,11 @@ public class EditJournalEntryController {
             entryToUpdate.setRatings(rating);
             entryToUpdate.setTitle(titleText);
 
-            // Update the entry details in the corresponding file
             String entryFilePath = "Entries/Entries" + entryToUpdate.getId() + ".txt";
-            String imagePath = entryToUpdate.getPhotos().getUrl().substring("file:/".length());
 
             try {
-                // Update the entry file
                 updateEntryInFile(entryToUpdate, entryFilePath);
 
-                // If needed, update the image file
                 if (uploadedImageFile != null) {
                     String uniqueFileName = entryToUpdate.getId() + getFileExtension(uploadedImageFile.getName());
                     String imageDirectoryPath = "Images";
@@ -122,17 +116,15 @@ public class EditJournalEntryController {
                     saveImage(uploadedImageFile, destinationPath);
 
                     System.out.println(uniqueFileName);
-                    // Update the entry with the new image path
                     entryToUpdate.setPhotos(new Image(new File("Images/" + uniqueFileName).toURI().toString()));
 
-                    // Copy the new image file to the destination
                     Files.copy(uploadedImageFile.toPath(), Paths.get(destinationPath), StandardCopyOption.REPLACE_EXISTING);
                 }
 
                 showAlert(Alert.AlertType.INFORMATION, "Entry Updated", "Entry updated successfully.");
             } catch (IOException e) {
                 showAlert(Alert.AlertType.ERROR, "Error", "Failed to update entry.");
-                e.printStackTrace();
+                throw new Error(e);
             }
         } else {
             showAlert(Alert.AlertType.ERROR, "Error", "No entry selected for update.");
@@ -146,7 +138,6 @@ public class EditJournalEntryController {
             StringBuilder content = new StringBuilder();
 
             while ((line = reader.readLine()) != null) {
-                // Update the relevant lines in the file
                 String[] parts = line.split(": ");
                 if (parts.length == 2) {
                     switch (parts[0]) {
@@ -173,7 +164,6 @@ public class EditJournalEntryController {
                 content.append(line).append("\n");
             }
 
-            // Write the updated content back to the file
             try (FileWriter writer = new FileWriter(entryFilePath)) {
                 writer.write(content.toString());
             }
@@ -244,17 +234,14 @@ public class EditJournalEntryController {
     }
 
     public void populateFields(JournalEntry entry) {
-        // If entry is not null, it means we are in edit mode
         if (entry != null) {
-            entryToUpdate = entry; // Store the entry to be updated
-            // Populate the fields with the details of the selected entry
+            entryToUpdate = entry;
             date.setValue(entry.getDate());
             description.setText(entry.getDescription());
             locations.setText(entry.getLocation());
             expsenses.setText(entry.getExpenses());
             ratings.setText(entry.getRatings());
             title.setText(entry.getTitle());
-            // You may need to handle the image separately if needed
         }
     }
 }

@@ -44,9 +44,9 @@ public class LoginController {
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
-//                showAlert(Alert.AlertType.INFORMATION, "Login Success", "Welcome, " + username + "!");
+                showAlert(Alert.AlertType.INFORMATION, "Login Success", "Welcome, " + username + "!");
             } else {
-                showAlert("Login Error", "Invalid username or password!");
+                showAlert(Alert.AlertType.ERROR, "Login Error", "Invalid username or password!");
             }
 
         } catch (Exception e) {
@@ -66,13 +66,13 @@ public class LoginController {
             }
             reader.close();
         } catch (IOException e) {
-            showAlert("File Error", "Error occurred while reading user details!");
+            showAlert(Alert.AlertType.ERROR ,"File Error", "Error occurred while reading user details!");
         }
         return null;
     }
 
-    private void showAlert(String title, String content) {
-        Alert alert = new Alert(Alert.AlertType.ERROR);
+    private void showAlert(Alert.AlertType type, String title, String content) {
+        Alert alert = new Alert(type);
         alert.setTitle(title);
         alert.setContentText(content);
         alert.showAndWait();

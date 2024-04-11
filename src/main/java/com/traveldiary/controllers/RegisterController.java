@@ -10,10 +10,13 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Arrays;
 
 public class RegisterController {
 
@@ -28,30 +31,46 @@ public class RegisterController {
 
     @FXML
     void registerBtnClicked() {
-        try{
+        try {
             String username = usernameField.getText();
             String password = passwordField.getText();
             String confirmPassword = confirmPasswordField.getText();
 
-            if(!password.equals(confirmPassword)){
+            if (!password.equals(confirmPassword)) {
                 showAlert(Alert.AlertType.ERROR, "Registration Error", "Password & Confirm Password must match!");
                 return;
             }
 
-            if(username.isEmpty()){
+            if (username.isEmpty()) {
                 showAlert(Alert.AlertType.ERROR, "Registration Error", "Username must not be empty!");
+                return;
+            }
+
+            BufferedReader reader = new BufferedReader(new FileReader("users.txt"));
+            String line;
+            boolean alreadyRegistered = false;
+            while ((line = reader.readLine()) != null) {
+                String[] parts = line.split(",");
+                System.out.println(Arrays.toString(parts));
+                if (parts.length == 2 && parts[0].equals(username)) {
+                    alreadyRegistered = true;
+                    showAlert(Alert.AlertType.ERROR, "Registration Error", "Username already exists.");
+                }
+            }
+
+            if (alreadyRegistered) {
                 return;
             }
 
             User user = new User(username, password);
             saveUserToFile(user);
 
-        }catch (Exception e){
+        } catch (Exception e) {
             throw new Error(e);
         }
     }
 
-    public void showAlert(Alert.AlertType type, String title, String content){
+    public void showAlert(Alert.AlertType type, String title, String content) {
         Alert alert = new Alert(type);
         alert.setTitle(title);
         alert.setContentText(content);

@@ -5,28 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c5499be-4693-47af-879b-f5cf5bab71e7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/traveldiary/controllers/EditJournalEntryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/EditJournalEntry.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entries/Entries2550cfdb-a25f-442e-9301-e4474605a781.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entries/Entries30b5c073-c5a7-4308-b7c9-c96367dac72b.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entries/Entries5eca2af4-6aad-46dd-a1c1-6622e4731d4d.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entries/Entries74f590c2-c7c7-45fe-8e53-baea2c6022d1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entries/Entriesb6164ac3-1cca-4f2d-8f7d-f001f71dce67.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entries/Entriese0a3f7f9-e73e-41cf-bc63-e5d75f5f377b.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entries/Entriesf364ddca-fc21-4c47-9049-eb457e8418c1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/2550cfdb-a25f-442e-9301-e4474605a781.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/30b5c073-c5a7-4308-b7c9-c96367dac72b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/5eca2af4-6aad-46dd-a1c1-6622e4731d4d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/74f590c2-c7c7-45fe-8e53-baea2c6022d1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/b6164ac3-1cca-4f2d-8f7d-f001f71dce67.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/e0a3f7f9-e73e-41cf-bc63-e5d75f5f377b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/f364ddca-fc21-4c47-9049-eb457e8418c1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/traveldiary/controllers/AddJournalEntryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/traveldiary/controllers/AddJournalEntryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/traveldiary/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/traveldiary/application/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/traveldiary/controllers/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/traveldiary/controllers/DashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/traveldiary/models/JournalEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/traveldiary/models/JournalEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Dashboard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/traveldiary/controllers/EditJournalEntryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/traveldiary/controllers/EditJournalEntryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/traveldiary/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/traveldiary/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/traveldiary/controllers/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/traveldiary/controllers/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/photo1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/photo2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/photo3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users.txt" beforeDir="false" afterPath="$PROJECT_DIR$/users.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +75,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Problems",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
@@ -127,9 +115,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
-        <option value="jdk-17.0.9-jbr-17.0.9-4caba194b151-51f1b679" />
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
       </set>
     </attachedChunks>
   </component>
@@ -145,7 +132,10 @@
       <workItem from="1712128225476" duration="3891000" />
       <workItem from="1712141150789" duration="5735000" />
       <workItem from="1712210703097" duration="6464000" />
-      <workItem from="1712381193824" duration="19604000" />
+      <workItem from="1712381193824" duration="20499000" />
+      <workItem from="1712564163851" duration="1918000" />
+      <workItem from="1712566975306" duration="3360000" />
+      <workItem from="1712811787836" duration="1080000" />
     </task>
     <servers />
   </component>
